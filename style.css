@@ -437,6 +437,15 @@ span {
         display: block;
     }
 
+    .services-container {
+        flex-direction: column; /* Stack boxes vertically */
+        gap: 3rem; /* Increase spacing for better readability */
+    }
+
+    .services-container .services-box {
+        max-width: 100%; /* Allow full-width boxes on small screens */
+    }
+
     .home {
         flex-direction: column;
     }
