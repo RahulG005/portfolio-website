@@ -213,13 +213,15 @@ span {
 }
 
 .services-container .services-box {
-    flex: 1 1 30rem;
-    background:var(--bg-color);
+    flex: 1 1 30rem; /* Allow flexible width with a minimum size */
+    max-width: 32%; /* Ensure a consistent maximum width */
+    background: var(--bg-color);
     padding: 3rem 2rem 2rem;
     border-radius: 2rem;
     text-align: center;
     border: .2rem solid var(--snd-bg-color);
     transition: 0.5s ease;
+    box-sizing: border-box; /* Ensure padding doesn't affect width calculations */
 }
 
 .services-container .services-box:hover {
