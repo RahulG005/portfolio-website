@@ -522,4 +522,42 @@ span {
 
 }
 
+.home .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;  /* Adjust the gap as needed */
+    margin-top: 20px;
+}
+
+.buttons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    padding: 1rem;
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+
+.buttons .btn {
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+
+.buttons a:hover {
+    background: var(--main-color);
+    color: var(--snd-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
 

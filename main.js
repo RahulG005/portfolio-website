@@ -12,7 +12,7 @@ let navlink = document.querySelector("header nav a");
 
 /*-- typed js ---*/
 const typed = new Typed('.multiple-text', {
-    strings: ['Full-stack Developer', 'Backend Developer', 'Data Analyst'],
+    strings: ['Data Engineer', 'Backend Developer', 'Data Analyst'],
     typeSpeed: 70,
     backSpeed: 70,
     backDelay: 1000,
