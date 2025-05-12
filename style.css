@@ -103,7 +103,7 @@ span {
 }
 
 .home-image img {
-    width: 20vw;
+    width: 10vw;
     animation: floatImage 4s ease-in-out infinite;
     border-radius: 30%;
 }
@@ -505,14 +505,7 @@ span {
     }
 }
 
-@media (max-width: 1024px) {
 
-    .home-image img {
-        width: 40vw;
-        margin-top: 8rem;
-    }
-
-}
 
 @media (max-width: 768px) {
     .portfolio-container{
