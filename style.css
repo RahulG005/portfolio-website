@@ -505,6 +505,15 @@ span {
     }
 }
 
+@media (max-width: 1024px) {
+
+    .home-image img {
+        width: 40vw;
+        margin-top: 8rem;
+    }
+
+}
+
 @media (max-width: 768px) {
     .portfolio-container{
         grid-template-columns: 0.7fr;
