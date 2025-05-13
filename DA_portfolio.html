@@ -1,83 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Projects</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .portfolio-container {
-            padding: 5rem 9%;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Projects</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
 
-        .portfolio-container h2.heading {
-            font-size: 3rem;
-            margin-bottom: 3rem;
-        }
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: var(--snd-bg-color);
+      border-bottom: 1px solid #ccc;
+    }
 
-        .project {
-            background-color: var(--snd-bg-color);
-            padding: 2rem;
-            border-radius: 1rem;
-            margin-bottom: 2rem;
-        }
+    .back-button {
+      padding: 0.5rem 1.2rem;
+      background: var(--main-color);
+      color: var(--bg-color);
+      border-radius: 2rem;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 500;
+      box-shadow: 0 0 0.5rem var(--main-color);
+      transition: box-shadow 0.3s ease;
+    }
 
-        .project h3 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
+    .back-button:hover {
+      box-shadow: none;
+    }
 
-        .project p {
-            font-size: 1.4rem;
-            color: var(--text-color);
-        }
+    .portfolio-container {
+      padding: 4rem 9% 2rem;
+    }
 
-        .top-back-button {
-            position: absolute;
-            top: 2rem;
-            left: 2rem;
-            background: var(--main-color);
-            color: var(--bg-color);
-            padding: 0.6rem 1.4rem;
-            font-size: 1.2rem;
-            border-radius: 3rem;
-            text-decoration: none;
-            font-weight: 500;
-            box-shadow: 0 0 0.5rem var(--main-color);
-            transition: box-shadow 0.3s ease;
-        }
+    .portfolio-container h2.heading {
+      font-size: 2.6rem;
+      margin-bottom: 2.5rem;
+    }
 
-        .top-back-button:hover {
-            box-shadow: none;
-        }
+    .project {
+      background-color: var(--snd-bg-color);
+      padding: 2rem;
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+    }
 
-        body {
-            position: relative;
-        }
-    </style>
+    .project h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .project p {
+      font-size: 1.4rem;
+      color: var(--text-color);
+    }
+  </style>
 </head>
 <body>
 
-    <a href="index.html" class="top-back-button">← Back</a>
+  <!-- Top bar with back button -->
+  <div class="header">
+    <a href="index.html" class="back-button">← Back</a>
+  </div>
 
-    <section class="portfolio-container">
-        <h2 class="heading">My Portfolio Projects</h2>
+  <!-- Portfolio content -->
+  <section class="portfolio-container">
+    <h2 class="heading">My Portfolio Projects</h2>
 
-        <div class="project" id="project1">
-            <h3>Project 1 Title</h3>
-            <p>Description of Project 1. Add details about tools, outcomes, or links if available.</p>
-        </div>
+    <div class="project" id="project1">
+      <h3>Project 1 Title</h3>
+      <p>Description of Project 1. Add details about tools, outcomes, or links if available.</p>
+    </div>
 
-        <div class="project" id="project2">
-            <h3>Project 2 Title</h3>
-            <p>Description of Project 2. You can link to GitHub, dashboards, or case studies.</p>
-        </div>
+    <div class="project" id="project2">
+      <h3>Project 2 Title</h3>
+      <p>Description of Project 2. You can link to GitHub, dashboards, or case studies.</p>
+    </div>
 
-        <div class="project" id="project3">
-            <h3>Project 3 Title</h3>
-            <p>Description of Project 3. Explain business problem, solution and results.</p>
-        </div>
-    </section>
+    <div class="project" id="project3">
+      <h3>Project 3 Title</h3>
+      <p>Description of Project 3. Explain business problem, solution and results.</p>
+    </div>
+  </section>
 
 </body>
 </html>
