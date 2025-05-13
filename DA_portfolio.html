@@ -37,11 +37,16 @@
 
     .portfolio-container {
       padding: 4rem 9% 2rem;
+      flex-direction: column;
+      display: flex;
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     .portfolio-container h2.heading {
       font-size: 2.6rem;
       margin-bottom: 2.5rem;
+      margin-top: 2rem;
     }
 
     .project {
@@ -49,6 +54,8 @@
       padding: 2rem;
       border-radius: 1rem;
       margin-bottom: 2rem;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .project h3 {
@@ -66,12 +73,12 @@
 
   <!-- Top bar with back button -->
   <div class="header">
-    <a href="index.html" class="back-button">← Back</a>
+    <a href="index.html#services" class="back-button">← Back</a>
   </div>
 
   <!-- Portfolio content -->
   <section class="portfolio-container">
-    <h2 class="heading">My Portfolio Projects</h2>
+    <h2 class="heading">Data Analysis Projects</h2>
 
     <div class="project" id="project1">
       <h3>Project 1 Title</h3>

@@ -37,11 +37,16 @@
 
     .portfolio-container {
       padding: 4rem 9% 2rem;
+      flex-direction: column;
+      display: flex;
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     .portfolio-container h2.heading {
       font-size: 2.6rem;
       margin-bottom: 2.5rem;
+      margin-top: 2rem;
     }
 
     .project {
@@ -49,6 +54,8 @@
       padding: 2rem;
       border-radius: 1rem;
       margin-bottom: 2rem;
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .project h3 {
@@ -60,22 +67,39 @@
       font-size: 1.4rem;
       color: var(--text-color);
     }
+
+    .simple-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #000203; /* You can replace with any color */
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+    cursor: pointer;}
+
+  .simple-button:hover {
+    background-color: #566370; /* Slightly darker on hover */
+  }
   </style>
 </head>
 <body>
 
   <!-- Top bar with back button -->
   <div class="header">
-    <a href="index.html" class="back-button">← Back</a>
+    <a href="index.html#services" class="back-button">← Back</a>
   </div>
 
   <!-- Portfolio content -->
   <section class="portfolio-container">
-    <h2 class="heading">My Portfolio Projects</h2>
+    <h2 class="heading">Data Engineering Projects</h2>
 
     <div class="project" id="project1">
       <h3>Project 1 Title</h3>
       <p>Description of Project 1. Add details about tools, outcomes, or links if available.</p>
+      <a href="" class="simple-button">Click Here</a>
     </div>
 
     <div class="project" id="project2">
@@ -83,9 +107,16 @@
       <p>Description of Project 2. You can link to GitHub, dashboards, or case studies.</p>
     </div>
 
-    <div class="project" id="project3">
-      <h3>Project 3 Title</h3>
-      <p>Description of Project 3. Explain business problem, solution and results.</p>
+    <div class="project" id="project3 ">
+      <h3>Full stack website for Car dealership</h3>
+      <p> Using Django created a full stack website for including Admin page, CRUD operations, Team Email alerts, Authorization, authentication , search and filtering for customers with inquiery option</p>
+      <a href="https://www.linkedin.com/posts/rahul-gianchandani-698885193_djangodevelopment-fullstackdevelopment-sampleproject-activity-7211368110803623937-QTIz?utm_source=share&utm_medium=member_desktop" class="simple-button">Click Here</a>
+    </div>
+
+    <div class="project">
+      <h3>PEN SPACE Payment Integration</h3>
+      <p>Built a subscription feature for a content-sharing platform using the PayPal API, allowing users to manage plans (create, upgrade, cancel) seamlessly. Targeted at professionals sharing exclusive content, with Django (Python) backend, PostgreSQL on Render, Amazon S3 for storage, and front end in HTML/CSS/JS. Deployed via Render & GitHub.</p>
+      <a href="https://www.linkedin.com/posts/rahul-gianchandani-698885193_paypalintegration-subscriptionservice-contentplatform-activity-7216071224525770754-ZOwa?utm_source=share&utm_medium=member_desktop" class="simple-button">Click Here</a>
     </div>
   </section>
 

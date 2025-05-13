@@ -323,7 +323,7 @@ span {
 }
 
 .contact {
-   background: var(--snd-bg-color);
+   background: var(bg-color);
 }
 
 .contact h2 {
@@ -349,7 +349,7 @@ span {
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background: var(--bg-color);
+    background: var(--snd-bg-color);
     border-radius: .8rem;
     margin: .7rem 0;
 }
