@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .tab-container {
+            padding: 5rem 9%;
+        }
+
+        .tab-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .tab-buttons button {
+            padding: 1rem 2rem;
+            background-color: var(--main-color);
+            color: var(--bg-color);
+            border: none;
+            border-radius: 2rem;
+            cursor: pointer;
+            font-size: 1.4rem;
+            transition: background 0.3s ease;
+        }
+
+        .tab-buttons button.active {
+            background-color: #008f7a;
+        }
+
+        .tab-content {
+            display: none;
+            font-size: 1.6rem;
+            background-color: var(--snd-bg-color);
+            padding: 2rem;
+            border-radius: 1rem;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .back-button {
+            margin-top: 4rem;
+            display: inline-block;
+            padding: 1rem 2.8rem;
+            background: var(--main-color);
+            color: var(--bg-color);
+            border-radius: 4rem;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 0 1rem var(--main-color);
+        }
+
+        .back-button:hover {
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="tab-container">
+        <h2 class="heading">My Portfolio Projects</h2>
+
+        <div class="tab-buttons">
+            <button class="tab-link active" onclick="openTab(event, 'project1')">Project 1</button>
+            <button class="tab-link" onclick="openTab(event, 'project2')">Project 2</button>
+            <button class="tab-link" onclick="openTab(event, 'project3')">Project 3</button>
+        </div>
+
+        <div id="project1" class="tab-content active">
+            <h3>Project 1 Title</h3>
+            <p>Description of Project 1. Add details about tools, outcomes, or links if available.</p>
+        </div>
+
+        <div id="project2" class="tab-content">
+            <h3>Project 2 Title</h3>
+            <p>Description of Project 2. You can link to GitHub, dashboards, or case studies.</p>
+        </div>
+
+        <div id="project3" class="tab-content">
+            <h3>Project 3 Title</h3>
+            <p>Description of Project 3. Explain business problem, solution and results.</p>
+        </div>
+
+        <a href="index.html" class="back-button">← Back to Home</a>
+    </section>
+
+    <script>
+        function openTab(evt, tabId) {
+            const contents = document.querySelectorAll('.tab-content');
+            const buttons = document.querySelectorAll('.tab-link');
+
+            contents.forEach(content => content.classList.remove('active'));
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            document.getElementById(tabId).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
