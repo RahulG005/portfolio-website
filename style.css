@@ -671,7 +671,7 @@ span {
   left: 0;
   width: 100%;     /* Match container width */
   height: 100%;    /* Match container height */
-  object-fit: cover;
+  object-fit: contain;
   /* display: none; */
 }
 
